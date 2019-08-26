@@ -1,4 +1,4 @@
-# AgileEngineCodingChallengeApiBank
+# Agile Engine - CodingChallenge - Bank API
 
 AgileEngine - Coding Challenge for Paxos - Bank API
 
