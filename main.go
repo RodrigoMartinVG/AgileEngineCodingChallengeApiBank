@@ -20,6 +20,6 @@ func main() {
 	r.Methods("GET").Path("/ui").Handler(api.NewEndpoint(api.HandleUI, api.ResponseHTML))
 	
 	log.Println("ListenAndServe:8080")
-	http.ListenAndServe(":8080", r)
+	log.Fatal(http.ListenAndServe(":8080", r))
 	
 }
