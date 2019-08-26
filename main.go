@@ -4,8 +4,8 @@ import (
 	"log"
 	"github.com/gorilla/mux"
 	"net/http"
-	"AgileEngineCodingChallengeApiBank/api"
-	"AgileEngineCodingChallengeApiBank/templates"
+	"github.com/rodrigomartinvg/AgileEngineCodingChallengeApiBank/api"
+	"github.com/rodrigomartinvg/AgileEngineCodingChallengeApiBank/templates"
 )
 
 func main() {

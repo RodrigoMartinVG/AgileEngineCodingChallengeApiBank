@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"encoding/json"
 	"github.com/pborman/uuid"
-	"AgileEngineCodingChallengeApiBank/templates"
+	"github.com/rodrigomartinvg/AgileEngineCodingChallengeApiBank/templates"
 )
 
 
@@ -24,7 +24,7 @@ func HandleTransactionPost(w http.ResponseWriter, r *http.Request) {
 
 	var transaction Transaction
 
-	handleError((json.NewDecoder(r.Body).Decode(&transaction)))
+	handleError(json.NewDecoder(r.Body).Decode(&transaction))
 
 	handleError(transaction.Type.validate())
 	handleError(transaction.Amount.validate())
