@@ -45,9 +45,9 @@ func HandleTransactionPost(w http.ResponseWriter, r *http.Request) {
 		TransactionsDB[tr.ID] = tr
 
 		switch tr.Type {
-		case "debit":
+		case TransactionTypeDebit:
 			userAccount.CurrentBalance -= tr.Amount
-		case "credit":
+		case TransactionTypeCredit:
 			userAccount.CurrentBalance += tr.Amount
 		}
 	}()

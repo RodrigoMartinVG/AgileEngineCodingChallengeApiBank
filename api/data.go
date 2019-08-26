@@ -12,11 +12,14 @@ const ResponseJSON apiResponse = 1
 
 type TransactionType string
 
+const TransactionTypeDebit TransactionType = "debit"
+const TransactionTypeCredit TransactionType = "credit"
+
 func (tt TransactionType) validate() error {
 
 	switch tt {
-	case "debit": return nil
-	case "credit": return nil
+	case TransactionTypeDebit: return nil
+	case TransactionTypeCredit: return nil
 	}
 	return errors.New(fmt.Sprintf("unkown type '%s", tt))
 }
